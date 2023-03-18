@@ -1,0 +1,21 @@
+{
+    "name": "ecommerce-app",
+    "version": "1.0.0",
+    "description": "Follow the instructions in the individual folders to run the app on your local machine",
+    "main": "index.js",
+    "scripts": {
+        "start:frontend": "cd ./ecommerce-client && npm install && npm run dev",
+        "start:backend": "cd ./ecommerce-backend && npm install && npm start"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Master-Daniels/e-commerce-app.git"
+    },
+    "keywords": [],
+    "author": "Master DAniels",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/Master-Daniels/e-commerce-app/issues"
+    },
+    "homepage": "https://github.com/Master-Daniels/e-commerce-app#readme"
+}
