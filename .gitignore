@@ -1,0 +1,2 @@
+# ignore all the node modules in both folders
+node-modules
