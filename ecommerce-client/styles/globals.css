@@ -27,9 +27,30 @@ a {
 
 .navbar-container {
     display: flex;
-    justify-content: space-between;
-    margin: 6px 18px;
+    margin: 16px 18px;
     position: relative;
+}
+
+.navbar-container .buttons {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.buttons button:nth-child(1) {
+    background: none;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 14px 10px;
+    text-transform: capitalize;
+    transition: all 1.5s ease-in-out;
+    cursor: pointer;
+}
+
+.buttons button:nth-child(1):hover {
+    background-color: #ebebeb;
+    border-radius: 10px;
 }
 .marquee-text {
     font-size: 29px;
@@ -777,5 +798,89 @@ span.text-red {
     .btn-container {
         width: 300px;
         margin: auto;
+    }
+}
+
+/* Add Service page */
+/* Add padding to container elements */
+.service {
+    padding: 20px;
+    width: 500px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background: white;
+    -webkit-box-shadow: 2px 1px 21px -9px rgba(0, 0, 0, 0.38);
+    -moz-box-shadow: 2px 1px 21px -9px rgba(0, 0, 0, 0.38);
+    box-shadow: 2px 1px 21px -9px rgba(0, 0, 0, 0.38);
+}
+.service h1,
+p {
+    margin: 10px 0px;
+}
+/* Full-width input fields */
+.service input[type="text"],
+.service textarea {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f7f7f7;
+    font-family: Montserrat, Arial, Helvetica, sans-serif;
+}
+.service select {
+    width: 18%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f7f7f7;
+    font-family: Montserrat, Arial, Helvetica, sans-serif;
+}
+
+.service input[type="phone"] {
+    width: 81%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f7f7f7;
+}
+
+.service input[type="text"]:focus,
+.service input[type="password"]:focus,
+.service input[type="phone"]:focus,
+.service select:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+/* Set a style for all buttons */
+.service button {
+    background-color: #0eb7f4;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+    font-size: 16px;
+    font-family: Montserrat, Arial, Helvetica, sans-serif;
+    border-radius: 10px;
+}
+
+.service button:hover {
+    opacity: 1;
+}
+
+/* Change styles for signup button on extra small screens */
+@media screen and (max-width: 300px) {
+    .signupbtn {
+        width: 100%;
     }
 }
